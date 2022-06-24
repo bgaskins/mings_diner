@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ming's Diner</title>
+
+<link rel=¨stylesheet¨ type=¨text/css¨ href="css/main.css">
+<script src="scripts.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+
+<section class="bg-white text-center py-4">
+	<img class="logo" src="img/MingsDinerLogoSm.png" width="300" height="175" alt="Ming's Diner">
+	</section>	
+
+<!--navigation bar-->
+<header id="navbar">
+<div class="container">
+		<ul class="nav justify-content-center">
+	  <li class="nav-item">
+	    <a class="nav-link" href="menu.html">Menu</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="pickup.html">Order Pick Up</a>
+	  </li>
+	</ul>
+</div>
+</header>
+
+<br>
+<br>
+<br>
+<!-- carousel -->
+<div class="container">
+  <div class="row">
+  	<div class="col-sm-6">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+	 <div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="img/blueberrypancakes.png" class="d-block w-100" alt="Ming's Blueberry Pancakes">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/burgerandfries.png" class="d-block w-100" alt="Ming's Burger and Fries">
+		    </div>
+		        <div class="carousel-item">
+		      <img src="img/buffalowings.png" class="d-block w-100" alt="Ming's Hot Buffalo Wings">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		</div>
+		
+		<div class="col-sm-6">
+		<div class="container">
+			  <h2>About Ming's</h2>
+                <br>
+                <p class="text-justify"> Ming's Diner has been serving classic breakfast and lunch in New England for
+                						nearly 100 years. Breakfast and coffee is served all day and refills are always free!
+                						The homemade pancakes are served in stacks and our buffalo tenders pack some real heat.	
+                </p>
+                <br>
+                <br>
+			<!-- Order Pick Up -->
+			 <div class="card-body">
+			    <h5 class="card-title">Want to order online and pick up later?</h5>
+			    <p class="card-text">Pick up window opens at 8:30am.</p>
+			    <a href="pickup.html" class="btn btn-primary">Order Pick Up</a>
+			  </div>
+	</div>
+	</div>
+  </div>
+</div>
+</div>
+	
+	
+ <div class="container">
+	<div class="card-group">
+	  <div class="card border-white">
+    <img src="img/onionringsside.png" class="card-img-top" alt="Onion Rings">
+    <div class="card-body">
+      <h5 class="card-title">Classic Sides</h5>
+      <p class="card-text">Try Chef's cut onion rings dipped in a pancake batter.</p>
+    </div>
+  </div>
+  <div class="card border-white">
+    <img src="img/avacadotoast.png" class="card-img-top" alt="Avacado Toast">
+    <div class="card-body">
+      <h5 class="card-title">Avacado Toast</h5>
+      <p class="card-text">Whole grain toast topped with fresh Avacado.</p>
+    </div>
+  </div>
+  <div class="card border-white">
+    <img src="img/pizzaandsalad.png" class="card-img-top" alt="Pizza and a Salad">
+    <div class="card-body">
+      <h5 class="card-title">Pizza and Salads</h5>
+      <p class="card-text">Seasonal salads and pizza specials. </p>
+    </div>
+  </div>
+</div>
+</div>        
+    </section>
+<br>
+<br>
+<br>
+
+<div class="container">
+  <div class="row">
+<div class="col-sm-3">
+	  <form id="contactForm">
+	    <div class="mb-3">
+	      <label class="form-label" for="name">Name</label>
+	      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+	    </div>
+	    <div class="mb-3">
+	      <label class="form-label" for="emailAddress">Email Address</label>
+	      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+	    </div>
+	    <div class="mb-3">
+	      <label class="form-label" for="message">Message</label>
+	      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+	    </div>
+	    <div class="d-grid">
+	      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+	    </div>
+	  </form>
+  </div>
+
+  
+  			<div class="col-sm-3">
+            <div class="card border-white mb-3">
+              <div class="card-body">
+                 <h4 class="card-title mb-2">Hours</h4>
+                     <div class="grid-container">
+                      <div class="grid-item"><label>Monday-Friday</label></div>
+                      <div class="grid-item"><h7> 8:00 AM - 1:00 PM</h7></div>
+                      <br>
+                      <div class="grid-item"><label>Weekend</label></div>
+                      <div class="grid-item"><h7> 9:00 AM - 2:00 PM</h7></div>
+                      </div>
+                      </div>
+                        <div class="card-body">
+                       	  <h4 class="card-title mb-2">Give us a call!</h4>
+                         <br>
+                      	   <h6>Phone: 612-555-2143</h6>
+                           <h6>Email: info@mingsdiner612.com</h6>
+                        </div>
+                  <div>
+		<div>
+</div>
+
+
+        <footer class="footer">
+            <div>
+                <div>&copy; 2022 Ming's Diner</div>
+            </div>
+        </footer>
+    </div>
+</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
